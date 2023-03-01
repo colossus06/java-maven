@@ -1,5 +1,4 @@
 #!/usr/bin/env groovy
-#Simple kubectl command execution
 pipeline {
     agent none
     stages {
