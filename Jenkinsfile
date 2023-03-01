@@ -22,8 +22,8 @@ pipeline {
         }
             steps {
                 script {
-                    echo "Deploying the application..."
-                    sh 'kubectl version'
+                    echo 'Deploying the application...'
+                    sh 'kubectl create -f https://k8s.io/examples/application/deployment.yaml'
                 }
             }
         }
