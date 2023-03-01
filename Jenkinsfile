@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     echo "Deploying the application..."
-                    sh 'kubectl create deployment nginx-deployment --image=nginx'
+                    sh 'kubectl version'
                 }
             }
         }
