@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying the application...'
-                    sh 'kubectl create -f https://k8s.io/examples/application/deployment.yaml'
+                    sh 'kubectl create deployment nginx-deployment --image=nginx'
                 }
             }
         }
